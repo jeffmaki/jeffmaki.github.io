@@ -1,0 +1,45 @@
+html {
+	font-family: 'Cardo', serif;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0px;
+	color: #000;
+}
+
+body {
+	margin: 24px;
+}
+
+a:visited, 
+a:hover,
+a.active, a.active:hover,
+a:link {
+	color: #000;
+	border: 0;
+	text-decoration: none;
+}
+
+ol {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li {
+	padding-left: 0px;
+	line-height: 28px;
+}
+
+#top {
+	width: 450px;
+	float: left;
+	padding: 24px;
+}
+
+#top a {
+	border-bottom: #000 solid 1px;
+}
+
+#top p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
