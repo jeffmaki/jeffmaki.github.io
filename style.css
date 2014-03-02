@@ -48,6 +48,10 @@ span.strike {
 	padding: 12px;
 }
 
+#footer {
+	clear: both;
+	height: 100px;
+}
 
 .wrapper {
 	display: inline;
