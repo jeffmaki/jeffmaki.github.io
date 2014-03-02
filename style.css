@@ -7,15 +7,17 @@ html {
 }
 
 body {
+	max-width: 1000px;
 	margin: 24px;
 }
 
+a,
 a:visited, 
 a:hover,
 a.active, a.active:hover,
 a:link {
+	border-bottom: #000 solid 1px;
 	color: #000;
-	border: 0;
 	text-decoration: none;
 }
 
@@ -29,17 +31,71 @@ li {
 	line-height: 28px;
 }
 
+p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
 #top {
 	width: 450px;
 	float: left;
-	padding: 24px;
+	padding: 12px;
 }
 
-#top a {
-	border-bottom: #000 solid 1px;
+.wrapper {
+	display: inline;
+	float: left;
+	margin: 12px;
 }
 
-#top p {
-	padding-top: 0px;
-	margin-top: 0px;
+.wrapper.wide,
+.wrapper.wide .item {
+	width: 450px;
+	height: 300px;
+}
+
+.wrapper.tall {
+	width: 450px;
+	height: 450px;
+}
+
+.wrapper.tall .item {
+	margin-left: 50px;
+	width: 350px;
+	height: 450px;
+}
+
+.item {
+	position: relative;
+	border: 1px solid #FFFFFF;
+}
+
+.item img {
+	display: inline;
+}
+
+.item .text {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	display: none;
+}
+
+.item .text p {
+	margin: 24px;
+}
+
+.item.active {
+	border: 1px solid #000000;
+}
+
+.item.active .text {
+	display: inline;
+}
+
+.item.active img {
+	display: none;
 }
