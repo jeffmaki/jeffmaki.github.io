@@ -22,6 +22,14 @@
 
 				$this.removeClass("active");		
 			});
+			
+			jQuery("a").each(function() {
+				var $this = jQuery(this);
+				
+				$this.mousedown(function() {
+					ga('send', 'event', 'Links', 'Click', $this.text());					
+				});				
+			});
 		});
 	</script>
 </head>
