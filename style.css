@@ -8,6 +8,14 @@ html {
 
 body {
 	margin: 24px;
+	width: 950px;
+}
+
+@media only screen 
+and (max-device-width : 949px) { 
+	body {
+		width: 500px;
+	}
 }
 
 a,
