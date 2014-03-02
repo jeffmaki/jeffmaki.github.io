@@ -66,14 +66,14 @@ span.strike {
 }
 
 .wrapper.tall {
-	width: 450px;
+	width: 400px;
 	height: 450px;
 }
 
 .wrapper.tall .item {
 	width: 350px;
 	height: 450px;
-	margin-left: 50px;	
+	margin-left: 40px;	
 }
 
 .item {
