@@ -15,7 +15,7 @@
 				var $this = jQuery(this);
 
 				$this.addClass("active");				
-				_gaq.push(['_trackEvent', 'Projects', 'Hover', $this.find("img").attr("alt")]);
+				ga('send', 'event', 'Projects', 'Hover', $this.find("img").attr("alt"));
 			}, 
 			function(e) {
 				var $this = jQuery(this);
