@@ -8,14 +8,6 @@ html {
 
 body {
 	margin: 24px;
-	width: 950px;
-}
-
-@media only screen 
-and (max-device-width : 949px) { 
-	body {
-		width: 500px;
-	}
 }
 
 a,
@@ -56,68 +48,26 @@ span.strike {
 	padding: 12px;
 }
 
-#footer {
-	clear: both;
-	height: 100px;
-}
-
-.wrapper {
-	display: inline;
-	float: left;
-	margin: 12px;
-}
-
-.wrapper.wide,
-.wrapper.wide .item {
-	width: 450px;
-	height: 300px;
-}
-
-.wrapper.tall {
-	width: 400px;
-	height: 450px;
-}
-
-.wrapper.tall .item {
-	width: 350px;
-	height: 450px;
-	margin-left: 48px;	
-}
-
-.item {
-	position: relative;
-	border: 1px solid #FFFFFF;
-}
-
-.item img {
-	display: inline;
-}
-
-.item .text {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+#background {
+	z-index: -1;
+	
+	/* Set rules to fill background */
+	min-width: 100%;
+	min-height: 1000px;
+	
+	/* Set up proportionate scaling */
 	height: 100%;
-	width: 100%;
-	background-color: #FFFFFF;
-	display: none;
+	width: auto;
+	
+	/* Set up positioning */
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
 
-.item .text p {
-	margin: 24px;
-}
-
-.item.active {
-	border: 1px solid #000000;
-	-moz-box-shadow: 3px 3px 6px #888;
-	-webkit-box-shadow: 3px 3px 6px #888;
-	box-shadow: 3px 3px 6px #888;
-}
-
-.item.active .text {
-	display: inline;
-}
-
-.item.active img {
-	display: none;
+@media screen and (max-height: 1000px){
+	#background {
+		top: 70%;
+		margin-top: -700px; 
+	}
 }
