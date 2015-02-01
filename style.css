@@ -7,7 +7,11 @@ html {
 }
 
 body {
-	margin: 24px;
+	margin: 25px;
+}
+
+#top {
+	width: 425px;
 }
 
 a,
@@ -35,39 +39,4 @@ li {
 p {
 	padding-top: 0px;
 	margin-top: 0px;
-}
-
-span.strike {
-	text-decoration: line-through;
-}
-
-
-#top {
-	width: 450px;
-	float: left;
-	padding: 12px;
-}
-
-#background {
-	z-index: -1;
-	
-	/* Set rules to fill background */
-	min-width: 100%;
-	min-height: 1000px;
-	
-	/* Set up proportionate scaling */
-	height: 100%;
-	width: auto;
-	
-	/* Set up positioning */
-	position: fixed;
-	bottom: 0;
-	left: 0;
-}
-
-@media screen and (max-height: 1000px){
-	#background {
-		top: 70%;
-		margin-top: -700px; 
-	}
 }
