@@ -3,7 +3,8 @@ html {
 	font-size: 20px;
 	line-height: 24px;
 	margin: 0px;
-	color: #DCEFF9;
+	background-color: #dceff9;
+	color: #0096e1;
 }
 
 body {
@@ -17,7 +18,7 @@ a.active, a.active:hover,
 a:link {
 	color: #9986E1;
 	text-decoration: none;
-	border-bottom: #000000 solid 1px;
+	border-bottom: #9986E1 solid 1px;
 	display: inline-block;
 	height: 22px;
 }
