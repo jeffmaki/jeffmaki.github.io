@@ -2,6 +2,8 @@ html {
 	font-family: 'Cardo', serif;
 	font-size: 20px;
 	line-height: 24px;
+	margin: 0px;
+	background-color: #ffffff;
 	color: #000000;
 }
 
@@ -45,6 +47,7 @@ p {
 
 #image {
 	float: left;
+<<<<<<< HEAD
 	width: 460px;
 	height: 550px;
 	padding-bottom: 50px;
@@ -67,3 +70,7 @@ p {
 		width: 425px;
 	}
 }
+=======
+	padding: 12px;
+}
+>>>>>>> origin/master
