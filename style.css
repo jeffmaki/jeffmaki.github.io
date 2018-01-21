@@ -3,12 +3,12 @@ html {
 	font-size: 20px;
 	line-height: 24px;
 	margin: 0px;
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #f2f7ff;
+	color: #0055c4;
 }
 
 body {
-	margin: 0px;
+	margin: 24px;
 	padding: 0px;
 }
 
@@ -17,21 +17,19 @@ a:visited,
 a:hover,
 a.active, a.active:hover,
 a:link {
-	color: #000000;
+	color: #0055c4;
 	text-decoration: none;
-	border-bottom: #000000 solid 1px;
-	display: inline-block;
-	height: 22px;
+	border-bottom: #0055c4 solid 3px;
 }
 
-ol {
+li, ol {
 	list-style-type: none;
 	padding-left: 0px;
 }
 
 li {
-	padding-left: 0px;
 	line-height: 28px;
+	margin-bottom: 14px;
 }
 
 p {
@@ -48,16 +46,17 @@ p {
 #image {
 	float: left;
 	width: 460px;
-	height: 550px;
-	padding-bottom: 50px;
+	height: 541px;
 }
 
 #image span {
 	font-size: 50%;
 	font-style: italic;
-	display: block;
-	line-height: 0px;
 	padding-left: 30px;
+}
+
+#image a {
+	border-bottom: #0055c4 solid 1px;
 }
 
 @media only screen and (max-width: 1010px) {
