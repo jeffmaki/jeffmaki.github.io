@@ -59,6 +59,11 @@ p {
 	border-bottom: #0055c4 solid 1px;
 }
 
+#footer {
+	clear: both;
+	height: 50px;
+}
+
 @media only screen and (max-width: 1010px) {
     body {
 		width: 480px;
