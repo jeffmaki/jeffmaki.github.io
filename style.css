@@ -29,7 +29,7 @@ li, ol {
 
 li {
 	line-height: 28px;
-	margin-bottom: 14px;
+	margin-bottom: 10px;
 }
 
 p {
@@ -38,8 +38,9 @@ p {
 }
 
 #top {
+	position: relative;
 	float: left;
-	width: 500px;
+	width: 420px;
 	padding: 24px;
 }
 
@@ -59,17 +60,34 @@ p {
 	border-bottom: #0055c4 solid 1px;
 }
 
+#contact {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+
+	height: 120px;
+	width: 130px;
+	border-radius: 70px;
+	padding: 30px;
+	padding-top: 40px;
+
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	color: #1E2126;
+
+	transform: rotate(-10deg);
+
+	background: url(burst.png);
+	background-size: contain;
+}
+
 #footer {
 	clear: both;
 	height: 50px;
 }
 
 @media only screen and (max-width: 1010px) {
-    body {
+  body {
 		width: 480px;
-    }
-
-	#top {
-		width: 420px;
-	}
+  }
 }
