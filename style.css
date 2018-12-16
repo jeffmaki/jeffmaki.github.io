@@ -2,13 +2,13 @@ html {
 	font-family: 'Cardo', serif;
 	font-size: 20px;
 	line-height: 24px;
-	margin: 0px;
-	background-color: #f2f7ff;
-	color: #0055c4;
+
+	background-color: #f4f3f4;
+	color: #464646;
 }
 
 body {
-	margin: 24px;
+	margin: 0px;
 	padding: 0px;
 }
 
@@ -17,19 +17,14 @@ a:visited,
 a:hover,
 a.active, a.active:hover,
 a:link {
-	color: #0055c4;
+	color: #464646;
+	border-bottom: #464646 solid 3px;
 	text-decoration: none;
-	border-bottom: #0055c4 solid 3px;
 }
 
 li, ol {
 	list-style-type: none;
-	padding-left: 0px;
-}
-
-li {
-	line-height: 28px;
-	margin-bottom: 10px;
+	padding: 0px;
 }
 
 p {
@@ -37,33 +32,42 @@ p {
 	margin-top: 0px;
 }
 
-#top {
-	position: relative;
+#text, #image {
+	padding: 50px 0px 50px 50px;
 	float: left;
-	width: 420px;
-	padding: 24px;
+}
+
+#text p, #text ol {
+	width: 425px;
+}
+
+#text li {
+	line-height: 28px;
+	margin-bottom: 10px;
 }
 
 #image {
-	float: left;
-	width: 460px;
-	height: 541px;
+	position: relative;
+}
+
+#image img {
+	display: block;
 }
 
 #image span {
 	font-size: 50%;
 	font-style: italic;
-	padding-left: 30px;
+	padding-left: 10px;
 }
 
-#image a {
-	border-bottom: #0055c4 solid 1px;
+#image span a {
+	border-bottom: #464646 solid 1px;
 }
 
 #contact {
 	position: absolute;
-	bottom: 20px;
-	right: 10px;
+	top: 20px;
+	right: -40px;
 
 	height: 120px;
 	width: 130px;
@@ -81,13 +85,99 @@ p {
 	background-size: contain;
 }
 
-#footer {
+#portfolio {
 	clear: both;
+	padding: 50px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	background-color: #FFFFFF
+}
+
+#projects {
+	max-width: 900px;
+}
+
+#projects:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#projects li {
+	width: 275px;
+	height: 400px;
+	float: left;
+	background-color: #f4f3f4;
+	margin: 25px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+#projects li img {
+	object-fit: cover;
+	height: 200px;
+	width: 275px;
+}
+
+#projects li p {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 20px;
+	padding-top: 15px;
+}
+
+#projects li p em {
+	font-weight: bold;
+	font-style: normal;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.duo {
+	display: block;
+	height: 200px;
+	width: 275px;
+	opacity: .7;
+  background-color: #000000;
+	mix-blend-mode: darken;
+}
+
+.duo img{
+ -webkit-filter: grayscale(100%) contrast(1);
+ filter: grayscale(100%) contrast(1);
+ mix-blend-mode: screen;
+}
+
+#footer {
 	height: 50px;
+	clear: both;
 }
 
 @media only screen and (max-width: 1010px) {
-  body {
-		width: 480px;
+	#top {
+		width: 800px;
+	}
+
+	#text {
+		padding-bottom: 0px;
+	}
+
+	#projects {
+		max-width: 500px;
+	}
+
+	#projects li {
+		width: 425px;
+		height: 450px;
+	}
+
+	#projects li img {
+		height: 300px;
+		width: 425px;
+	}
+
+	.duo {
+		height: 300px;
+		width: 425px;
   }
 }
