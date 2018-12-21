@@ -38,7 +38,7 @@ p {
 }
 
 #text p, #text ol {
-	width: 425px;
+	width: 420px;
 }
 
 #text li {
@@ -88,11 +88,12 @@ p {
 #portfolio {
 	clear: both;
 	padding: 50px;
-	background-color: #FFFFFF
+	padding-right: 0px;
+	background-color: #FFFFFF;
 }
 
 #projects {
-	max-width: 900px;
+		max-width: 900px;
 }
 
 #projects:after{
@@ -151,9 +152,9 @@ p {
 	clear: both;
 }
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 970px) {
 	#top {
-		width: 800px;
+		width: 300px;
 	}
 
 	#text {
