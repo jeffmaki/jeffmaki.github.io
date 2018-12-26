@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Jeff Maki</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="autotrack.js"></script>
+
 	<link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type='text/css'>
 	<link href='style.css' rel='stylesheet' type='text/css' media="all">
@@ -189,6 +193,11 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-16762334-2', 'jeffmaki.com');
+
+		ga('require', 'outboundLinkTracker');
+		ga('require', 'maxScrollTracker');
+		ga('require', 'pageVisibilityTracker');
+
 	  ga('send', 'pageview');
 
 	</script>
