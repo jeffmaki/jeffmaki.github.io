@@ -1,15 +1,15 @@
 html {
 	font-family: 'Cardo', serif;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 1.2em;
+	line-height: 1.1em;
 
 	background-color: #f4f3f4;
 	color: #464646;
 }
 
 body {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 a,
@@ -24,40 +24,41 @@ a:link {
 
 li, ol {
 	list-style-type: none;
-	padding: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 p {
-	padding-top: 0px;
-	margin-top: 0px;
+	padding-top: 0;
+	margin-top: 0;
 }
 
 #text, #image {
-	padding: 50px 0px 50px 50px;
+	padding: 40px 0 40px 40px;
 	float: left;
-}
-
-#text p, #text ol {
-	width: 420px;
-}
-
-#text li {
-	line-height: 28px;
-	margin-bottom: 10px;
+	width: 410px;
 }
 
 #image {
 	position: relative;
+	margin-right: 40px;
 }
 
 #image img {
-	display: block;
+	width: 350px;
+	height: 416px;
+}
+
+#text li {
+	line-height: 1em;
+	margin-bottom: .7em;
 }
 
 #image span {
-	font-size: 50%;
+	display: block;
+	font-size: .5em;
 	font-style: italic;
-	padding-left: 10px;
+	padding-left: 1em;
 }
 
 #image span a {
@@ -67,75 +68,83 @@ p {
 #contact {
 	position: absolute;
 	top: 20px;
-	right: -40px;
+	right: -20px;
 
-	height: 120px;
-	width: 130px;
-	border-radius: 70px;
-	padding: 30px;
+	padding: 25px;
 	padding-top: 40px;
-
-	font-family: 'Bangers', cursive;
-	text-align: center;
-	color: #1E2126;
-
+	border-radius: 70px;
 	transform: rotate(-10deg);
 
 	background: url(burst.png);
 	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#contact p {
+	height: 125px;
+	width: 125px;
+
+	margin: 0;
+ 	padding: 0;
+
+	font-family: 'Bangers', cursive;
+	text-align: center;
+	color: #1E2126;
 }
 
 #portfolio {
 	clear: both;
-	padding: 50px;
-	padding-right: 0px;
+	padding: 40px;
+	padding-right: 10px;
 	background-color: #FFFFFF;
 }
 
 #projects {
-		max-width: 900px;
+	max-width: 900px;
+	border: 0;
+	margin: 0;
 }
 
-#projects:after{
+#projects:after {
+	content: "";
   clear: both;
-  content: "";
   display: block;
 }
 
 #projects li {
-	width: 275px;
-	height: 400px;
+	width: 270px;
+	height: 420px;
 	float: left;
+
 	background-color: #f4f3f4;
-	margin: 25px;
-	margin-left: 0px;
-	margin-top: 0px;
+	margin: 30px;
+	margin-left: 0;
+	margin-top: 0;
 }
 
 #projects li img {
 	object-fit: cover;
-	height: 200px;
-	width: 275px;
+	width: 270px;
+	height: 202px;
 }
 
 #projects li p {
-	font-size: 14px;
-	line-height: 20px;
-	padding: 20px;
-	padding-top: 15px;
+	font-size: .8em;
+	line-height: 1.3em;
+	padding: 1em;
 }
 
 #projects li p em {
 	font-weight: bold;
 	font-style: normal;
 	display: block;
-	padding-bottom: 10px;
+	padding-bottom: .5em;
 }
 
 .duo {
 	display: block;
-	height: 200px;
-	width: 275px;
+	width: 270px;
+	height: 202px;
 	opacity: .7;
   background-color: #000000;
 	mix-blend-mode: darken;
@@ -148,35 +157,55 @@ p {
 }
 
 #footer {
-	height: 50px;
+	height: 2em;
 	clear: both;
 }
 
-@media only screen and (max-width: 970px) {
-	#top {
-		width: 300px;
+@media only screen and (max-width: 950px) {
+	#text {
+		padding-bottom: 0;
 	}
 
-	#text {
-		padding-bottom: 0px;
+	#text, #image {
+		width: 295px;
+		float: none;
+	}
+
+	#image img {
+		width: 295px;
+		height: 351px;
+	}
+
+	#contact {
+		padding: 20px;
+		padding-top: 35px;
+		border-radius: 70px;
+	}
+
+	#contact p {
+		font-size: .8em;
+		line-height: 1em;
+
+		height: 95px;
+		width: 95px;
 	}
 
 	#projects {
-		max-width: 500px;
+		max-width: 450px;
 	}
 
 	#projects li {
-		width: 425px;
-		height: 450px;
+		width: 295px;
+		height: 410px;
 	}
 
 	#projects li img {
-		height: 300px;
-		width: 425px;
+		width: 295px;
+		height: 221px;
 	}
 
 	.duo {
-		height: 300px;
-		width: 425px;
-  }
+		width: 295px;
+		height: 221px;
+	}
 }
