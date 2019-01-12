@@ -36,17 +36,27 @@ p {
 #text, #image {
 	padding: 40px 0 40px 40px;
 	float: left;
+}
+
+#text {
 	width: 410px;
+	width: calc(50% - 150px);
+	max-width: 410px;
+	min-width: 265px;
 }
 
 #image {
 	position: relative;
 	margin-right: 40px;
+	width: 410px;
+	width: calc(50% - 150px);
+	max-width: 325px;
+	min-width: 265px;
 }
 
 #image img {
-	width: 350px;
-	height: 416px;
+	width: 100%;
+	height: 100%;
 }
 
 #text li {
@@ -71,7 +81,7 @@ p {
 	right: -20px;
 
 	padding: 25px;
-	padding-top: 40px;
+	padding-top: 35px;
 	border-radius: 70px;
 	transform: rotate(-10deg);
 
@@ -81,8 +91,11 @@ p {
 }
 
 #contact p {
-	height: 125px;
-	width: 125px;
+	height: 85px;
+	width: 85px;
+
+	font-size: .8em;
+	line-height: 1em;
 
 	margin: 0;
  	padding: 0;
@@ -146,14 +159,12 @@ p {
 	width: 270px;
 	height: 202px;
 	opacity: .7;
-  background-color: #000000;
 	mix-blend-mode: darken;
 }
 
 .duo img{
- -webkit-filter: grayscale(100%) contrast(1);
- filter: grayscale(100%) contrast(1);
- mix-blend-mode: screen;
+ -webkit-filter: grayscale(70%) contrast(1);
+ filter: grayscale(70%) contrast(1);
 }
 
 #footer {
@@ -161,51 +172,12 @@ p {
 	clear: both;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 649px) {
 	#text {
 		padding-bottom: 0;
 	}
 
 	#text, #image {
-		width: 295px;
 		float: none;
-	}
-
-	#image img {
-		width: 295px;
-		height: 351px;
-	}
-
-	#contact {
-		padding: 20px;
-		padding-top: 35px;
-		border-radius: 70px;
-	}
-
-	#contact p {
-		font-size: .8em;
-		line-height: 1em;
-
-		height: 95px;
-		width: 95px;
-	}
-
-	#projects {
-		max-width: 450px;
-	}
-
-	#projects li {
-		width: 295px;
-		height: 410px;
-	}
-
-	#projects li img {
-		width: 295px;
-		height: 221px;
-	}
-
-	.duo {
-		width: 295px;
-		height: 221px;
 	}
 }
