@@ -39,10 +39,11 @@ p {
 }
 
 #text {
-	width: 410px;
+	width: 360px;
 	width: calc(50% - 150px);
-	max-width: 410px;
+	max-width: 360px;
 	min-width: 265px;
+	padding-right: 50px;
 }
 
 #image {
