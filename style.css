@@ -45,7 +45,6 @@ p {
 }
 
 #text {
-	width: 360px;
 	width: calc(50% - 150px);
 	max-width: 460px;
 	min-width: 365px;
@@ -56,9 +55,6 @@ p {
 	position: relative;
 	margin-right: 40px;
 	width: 350px;
-	width: calc(50% - 150px);
-	max-width: 350px;
-	min-width: 350px;
 }
 
 #image img {
